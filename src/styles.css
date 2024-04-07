@@ -1,0 +1,146 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/320/original/MicrosoftTeams-image_%2818%29.png?1712505276");
+  background-size: cover; /* Adjusts the size of the background image */
+  background-position: center; /* Centers the background image */
+  /* You can add more properties to customize the background image */
+}
+
+a {
+  color: rgb(153, 202, 31);
+}
+
+.weather-app {
+  background: linear-gradient(
+    109.6deg,
+    rgb(0, 37, 84) 11.2%,
+    rgba(0, 37, 84, 0.32) 100.2%
+  );
+  /* background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/074/original/MicrosoftTeams-image_%2817%29.png?1712403719"); */
+  max-width: 60%; /* Adjust max-width for smaller screens */
+  margin: 20px 0 20px 20px; /* Add smaller margin on the right side and set margin-left to 0 */
+  padding: 50px; /* Reduce padding for smaller screens */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adjust box shadow */
+  height: 50%;
+}
+
+header {
+  /* border-bottom: 1px solid#fdf8f8; */
+  padding-bottom: 30px;
+}
+
+.search-input {
+  background-color: #282829;
+  border: none;
+  color: rgba(247, 246, 248, 0.977);
+  font-size: 16px;
+  padding: 20px;
+  width: 75%;
+  border-radius: 6px;
+}
+
+.search-input::placeholder {
+  color: white; /* Set the color of the placeholder text to white */
+}
+.search-button {
+  margin-left: 5px;
+  font-size: 16px;
+  background-color: whitesmoke;
+  color: #282829;
+  border: none;
+  padding: 20px;
+  line-height: 1;
+  border-radius: 5px;
+}
+
+main {
+  padding: 30px 0;
+}
+
+.current-temperature {
+  font-size: 48px;
+  color: rgb(153, 202, 31);
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-city {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0;
+  color: whitesmoke;
+}
+.current-details {
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.current-details strong {
+  color: rgb(153, 202, 31);
+}
+
+.current-temperature-icon {
+  position: relative;
+  top: -8px;
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.current-temperature-value {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.current-temperature-unit {
+  font-size: 28px;
+  position: relative;
+  top: -38px;
+}
+
+.icon {
+  width: 88px;
+  height: 88px;
+}
+
+footer {
+  /* border-top: 1px solid #f9f7fe; */
+  text-align: center;
+  padding-top: 15px;
+  color: whitesmoke;
+}
+
+.weather-forecast-date {
+  color: white;
+}
+
+.weather-temperature {
+  color: rgb(153, 202, 31);
+}
+
+#forecast {
+  display: flex; /* Use flexbox layout */
+  gap: 20px; /* Add some space between forecast items */
+}
+.weather-forecast-day {
+  display: flex; /* Ensure each forecast item is displayed as a flex container */
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center; /* Center child elements horizontally */
+  border: 1px solid #ccc; /* Add border for better separation */
+  padding: 10px; /* Add padding to each forecast item */
+  border-radius: 8px; /* Add border radius for rounded corners */
+}
+.weather-forecast-date {
+  font-weight: bold;
+}
+.weather-forecast-icon {
+  font-size: 24px; /* Adjust icon size */
+}
+.weather-forecast-temperature {
+  margin-top: 10px; /* Add some space between icon and temperature */
+  color: rgb(153, 202, 31);
+}
